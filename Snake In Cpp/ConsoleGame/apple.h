@@ -1,6 +1,7 @@
 #pragma once
-#include <random>
 #include <iostream>
+#include <cstdlib>
+#include <time.h>
 
 #define width 40//Y
 #define height 20//X
