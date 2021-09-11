@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="index.css">
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <!--Confettis-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <title>Snake</title>
+</head>
+<body>
+    <div class="col-12 animate__animated animate__bounce">
+        Welcome to the Snake Game
+    </div>
+    <!--Game-->
+    <div class="row animate__animated animate__fadeIn game">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <canvas id="game" height="400px" width="400px"></canvas>
+            <br>
+            <button id="startButton" class="buttonStart animate__animated animate__backInDown"><span>Jouer</span></button>
+            <br>
+            <p id="gameScore" class="animate__animated animate__backInDown" style="display:none;">Score: <span id="score">0</span></p>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="col-12 animate__animated animate__fadeIn" id="thxMsg" style="display:none;">
+        Thanks for playing !
+    </div>
+</body>
+<script src="snake.js"></script>
+</html>
